@@ -13,6 +13,9 @@
 		4248F22E237090A800726812 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4248F22C237090A800726812 /* Main.storyboard */; };
 		4248F230237090AB00726812 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4248F22F237090AB00726812 /* Assets.xcassets */; };
 		4248F233237090AB00726812 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4248F231237090AB00726812 /* LaunchScreen.storyboard */; };
+		42B0D198237477EE00CA01C4 /* FahrenhitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B0D197237477EE00CA01C4 /* FahrenhitVC.swift */; };
+		42B0D19A2374780500CA01C4 /* CelcuisVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B0D1992374780500CA01C4 /* CelcuisVC.swift */; };
+		42B0D19C2374781900CA01C4 /* KelvinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B0D19B2374781900CA01C4 /* KelvinVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		4248F22F237090AB00726812 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4248F232237090AB00726812 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4248F234237090AB00726812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42B0D197237477EE00CA01C4 /* FahrenhitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FahrenhitVC.swift; sourceTree = "<group>"; };
+		42B0D1992374780500CA01C4 /* CelcuisVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelcuisVC.swift; sourceTree = "<group>"; };
+		42B0D19B2374781900CA01C4 /* KelvinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KelvinVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				4248F228237090A800726812 /* SceneDelegate.swift */,
 				4248F22A237090A800726812 /* ViewController.swift */,
 				4248F22C237090A800726812 /* Main.storyboard */,
+				42B0D19B2374781900CA01C4 /* KelvinVC.swift */,
+				42B0D1992374780500CA01C4 /* CelcuisVC.swift */,
+				42B0D197237477EE00CA01C4 /* FahrenhitVC.swift */,
 				4248F22F237090AB00726812 /* Assets.xcassets */,
 				4248F231237090AB00726812 /* LaunchScreen.storyboard */,
 				4248F234237090AB00726812 /* Info.plist */,
@@ -140,7 +149,10 @@
 			files = (
 				4248F22B237090A800726812 /* ViewController.swift in Sources */,
 				4248F227237090A800726812 /* AppDelegate.swift in Sources */,
+				42B0D198237477EE00CA01C4 /* FahrenhitVC.swift in Sources */,
+				42B0D19C2374781900CA01C4 /* KelvinVC.swift in Sources */,
 				4248F229237090A800726812 /* SceneDelegate.swift in Sources */,
+				42B0D19A2374780500CA01C4 /* CelcuisVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
