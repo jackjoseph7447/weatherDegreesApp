@@ -8,23 +8,35 @@
 
 import UIKit
 
-class KelvinVC: UIViewController {
+class KelvinVC: UIViewController
+{
 
-    override func viewDidLoad() {
+    
+    
+    
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+
     }
     
 
-    /*
-    // MARK: - Navigation
+   //    var F : Double = 0
+   //    var C : Double = 0
+   //
+   //
+   //    var K : Double = 0
+   //
+   //    func calculateK()
+   //    {
+   //    K = (9.0/5.0*B + 32.0) + 273.15
+   //    }
+   //
+   //    calculateK()
+   //
+   //    print("It is " + String(K) + " kelvin")
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

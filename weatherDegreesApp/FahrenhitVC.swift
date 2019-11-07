@@ -8,23 +8,51 @@
 
 import UIKit
 
-class FahrenhitVC: UIViewController {
+class FahrenhitVC: UIViewController
+{
+    
+//    var F : Double = 0
+//    var C : Double = 0
+//
+//    func calculateCelcius()
+//    {
+//      F = 9.0/5.0*C + 32.0
+//    }
+//    C = 12
+//    calculateCelcius()
+//
+//    print("It is " + String(F) + " degrees fahrenheit.")
 
-    override func viewDidLoad() {
+    @IBOutlet weak var inputField: UITextField!
+    @IBOutlet weak var resultLabel: UILabel!
+    
+    var F : Double = 0
+    var C : Double = 0
+    func calculateF()
+    {
+        F = 9.0/5.0*C + 32.0
+        print(String(F))
+    }
+    
+    @IBAction func calculateButton(_ sender: Any)
+    {
+        resultLabel.text = String(C)
+        calculateF()
+        resultLabel.text = "It is degrees \(calculateF()) fahrenhit"
+    }
+    
+    
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
+        
 
-        // Do any additional setup after loading the view.
+
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
+    
+    
 }

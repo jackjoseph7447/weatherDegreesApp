@@ -8,23 +8,55 @@
 
 import UIKit
 
-class CelcuisVC: UIViewController {
+class CelcuisVC: UIViewController
+{
 
-    override func viewDidLoad() {
+    
+    
+    
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
     
 
-    /*
-    // MARK: - Navigation
+    //    var F : Double = 0
+    //    var C : Double = 0
+    //
+    //    func calculateCelcius()
+    //    {
+    //      F = 9.0/5.0*C + 32.0
+    //    }
+    //    C = 12
+    //    calculateCelcius()
+    //
+    //    print("It is " + String(F) + " degrees fahrenheit.")
+    //
+    //    var A : Double = 0 //Fahrenheit
+    //    var B : Double = 0 //Ceclius
+    //
+    //    func calculateF()
+    //    {
+    //    B = ((A - 32.0)*5.0/9.0)
+    //    }
+    //
+    //    A = 53.6
+    //    calculateF()
+    //    print("It is " + String(B) + " degrees celcius")
+    //
+    //    var K : Double = 0
+    //
+    //    func calculateK()
+    //    {
+    //    K = (9.0/5.0*B + 32.0) + 273.15
+    //    }
+    //
+    //    calculateK()
+    //
+    //    print("It is " + String(K) + " kelvin")
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
