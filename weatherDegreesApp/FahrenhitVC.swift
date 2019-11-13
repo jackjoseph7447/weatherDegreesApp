@@ -27,18 +27,17 @@ class FahrenhitVC: UIViewController
     @IBOutlet weak var resultLabel: UILabel!
     
     var F : Double = 0
-    var C : Double = 0
+    //var C : Double = 0
     func calculateF()
     {
-        F = 9.0/5.0*C + 32.0
-        print(String(F))
+        //F = 9.0/5.0*C + 32.0
+        print(F)
     }
     
     @IBAction func calculateButton(_ sender: Any)
     {
-        resultLabel.text = String(C)
         calculateF()
-        resultLabel.text = "It is degrees \(calculateF()) fahrenhit"
+        resultLabel.text = "It is degrees \(F) fahrenhit"
     }
     
     
@@ -47,8 +46,8 @@ class FahrenhitVC: UIViewController
     {
         super.viewDidLoad()
         
-
-
+        
+        
     }
     
 
