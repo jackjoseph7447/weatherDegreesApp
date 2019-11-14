@@ -11,27 +11,18 @@ import UIKit
 class FahrenhitVC: UIViewController
 {
     
-//    var F : Double = 0
-//    var C : Double = 0
-//
-//    func calculateCelcius()
-//    {
-//      F = 9.0/5.0*C + 32.0
-//    }
-//    C = 12
-//    calculateCelcius()
-//
-//    print("It is " + String(F) + " degrees fahrenheit.")
+
 
     @IBOutlet weak var inputField: UITextField!
     @IBOutlet weak var resultLabel: UILabel!
     
     var F : Double = 0
-    //var C : Double = 0
+    var C : Double = 0
+    
     func calculateF()
     {
-        //F = 9.0/5.0*C + 32.0
-        print(F)
+        C = Double(inputField.text!)!
+        F = 9.0/5.0*C + 32.0
     }
     
     @IBAction func calculateButton(_ sender: Any)
@@ -46,7 +37,7 @@ class FahrenhitVC: UIViewController
     {
         super.viewDidLoad()
         
-        
+        view.backgroundColor = UIColor.blue
         
     }
     

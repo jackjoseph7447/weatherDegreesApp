@@ -11,8 +11,24 @@ import UIKit
 class CelcuisVC: UIViewController
 {
 
+    @IBOutlet weak var inputField: UITextField!
+    @IBOutlet weak var resultLabel: UILabel!
+    
+    var A : Double = 0 //Fahrenheit
+    var B : Double = 0 //Celcius
+    
+    func calculateFahrenheit()
+    {
+        A = Double(inputField.text!)!
+        B = ((A - 32.0)*5.0/9.0)
+    }
     
     
+    @IBAction func calcButton(_ sender: Any)
+    {
+        calculateFahrenheit()
+        resultLabel.text = "It is \(B) degrees Fahrenhit"
+    }
     
     
     override func viewDidLoad()
@@ -23,17 +39,7 @@ class CelcuisVC: UIViewController
     }
     
 
-    //    var F : Double = 0
-    //    var C : Double = 0
-    //
-    //    func calculateCelcius()
-    //    {
-    //      F = 9.0/5.0*C + 32.0
-    //    }
-    //    C = 12
-    //    calculateCelcius()
-    //
-    //    print("It is " + String(F) + " degrees fahrenheit.")
+
     //
     //    var A : Double = 0 //Fahrenheit
     //    var B : Double = 0 //Ceclius

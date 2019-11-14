@@ -24,7 +24,7 @@ class ViewController: UIViewController
     {
         super.viewDidLoad()
         welcomeLabel.text = "Welcome to the weather calculator app! \n Please select what you would like to calculate"
-
+        view.backgroundColor = UIColor.blue
 
 
 
