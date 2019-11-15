@@ -19,6 +19,8 @@ class KelvinVC: UIViewController
     func calculateK()
         {
             K = (9.0/5.0*B + 32.0) + 273.15
+            B = Double(inputText.text!)!
+
         }
     
     @IBAction func calcButton(_ sender: Any)
