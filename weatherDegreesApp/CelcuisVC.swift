@@ -21,6 +21,8 @@ class CelcuisVC: UIViewController
     {
         A = Double(inputField.text!)!
         B = ((A - 32.0)*5.0/9.0)
+        resultLabel.text = String (format : "%.1f", B)
+        //trying to have it so it only says "0.1" and stops at the tenth decimal place.
     }
     
     
@@ -34,7 +36,8 @@ class CelcuisVC: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
+        view.backgroundColor = UIColor.lightGray
+        resultLabel.text = ""
         
     }
     

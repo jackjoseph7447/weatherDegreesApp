@@ -37,7 +37,7 @@ class FahrenhitVC: UIViewController
     {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor.blue
+        view.backgroundColor = UIColor.lightGray
         
     }
     
