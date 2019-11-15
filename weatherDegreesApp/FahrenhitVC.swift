@@ -28,7 +28,7 @@ class FahrenhitVC: UIViewController
     @IBAction func calculateButton(_ sender: Any)
     {
         calculateF()
-        resultLabel.text = "It is degrees \(F) fahrenhit"
+        resultLabel.text = "It is  \(F) degrees fahrenhit"
     }
     
     
