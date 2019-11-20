@@ -10,13 +10,12 @@ import UIKit
 
 class KelvinVC: UIViewController
 {
-    @IBOutlet weak var inputText: UITextField!
  
     @IBOutlet weak var celciusResult: UILabel!
-    
     @IBOutlet weak var farhenhitResult: UILabel!
     @IBOutlet weak var farhenhitText: UITextField!
     @IBOutlet weak var celcuisText: UITextField!
+    
     var K : Double = 0
     var B : Double = 0
     var F : Double = 0
@@ -26,12 +25,12 @@ class KelvinVC: UIViewController
     func calculateK()
         {
             K = B + 273.15
-            B = Double(celcuisText.text!)!
+            B = Double(celcuisText.text!) ?? 0
 
         }
     func calculateKelvin()
     {
-        A = Double(farhenhitText.text!)!
+        A = Double(farhenhitText.text!) ?? 0
         C = (A-32.0) * 5.0/9.0 + 273.15
     }
     
@@ -40,19 +39,23 @@ class KelvinVC: UIViewController
         if celcuisText.text != "" &&
         farhenhitText.text == ""
         {
-            calculateK()
-            celciusResult.text = "It is \(K) kelvin"
+            calculateKelvin()
+            celciusResult.text = "It is \(C) kelvin"
         }
         if celcuisText.text != "" &&
         farhenhitText.text == ""
         {
             calculateK()
-            farhenhitResult.text = "It is \(C) kelvin"
+            farhenhitResult.text = "It is \(K) kelvin"
         }
-        calculateKelvin()
-        calculateK()
-        farhenhitResult.text = "It is \(K) kelvin"
-        celciusResult.text = "It is \(C) kelvin"
+        if celcuisText.text != "" && farhenhitText.text != ""
+        {
+            calculateKelvin()
+            calculateK()
+            farhenhitResult.text = "It is \(C) kelvin"
+            celciusResult.text = "It is \(K) kelvin"
+        }
+        
     }
     
     
